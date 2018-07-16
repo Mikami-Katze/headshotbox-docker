@@ -18,7 +18,7 @@ RUN mkdir /root/.config
 RUN mkdir /root/.config/headshotbox
 VOLUME /root/.config/headshotbox
 
-COPY hsbox-0.17.1-standalone.jar /root/hsbox-0.17.1-standalone.jar
+COPY hsbox-0.17.2-standalone.jar /root/hsbox-0.17.2-standalone.jar
 COPY demoinfogo /root/demoinfogo
 COPY libgcc_s.so.1 /root/libs/libgcc_s.so.1
 COPY libprotobuf.so.7 /root/libs/libprotobuf.so.7
