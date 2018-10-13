@@ -2,9 +2,9 @@
 
 This is a Dockerfile based on openjdk:12-jdk-alpine to put [bugdone/headshotbox](https://github.com/bugdone/headshotbox) in a Docker.
 
-But this on your Docker server and execute:
+Download the Dockerfile to your Docker server and execute:
 
-```sudo docker build -t hsbox headshotbox-docker```
+```sudo docker build -t mikamikatze/hsbox - < Dockerfile```
   
 After building an Image, you can start a Container with this
 ```
