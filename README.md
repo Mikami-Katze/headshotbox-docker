@@ -1,6 +1,6 @@
 # headshotbox-docker
 
-This is a Dockerfile based on ubuntu:latest to put [bugdone/headshotbox](https://github.com/bugdone/headshotbox) in a Docker.
+This is a Dockerfile based on openjdk:12-jdk-alpine to put [bugdone/headshotbox](https://github.com/bugdone/headshotbox) in a Docker.
 
 But this on your Docker server and execute:
 
