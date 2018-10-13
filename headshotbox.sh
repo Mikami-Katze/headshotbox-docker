@@ -1,1 +1,1 @@
-java -jar hsbox-0.17.2-standalone.jar --port 4000
+java -jar hsbox-0.17.3-standalone.jar --port 4000
