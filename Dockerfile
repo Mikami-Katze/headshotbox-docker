@@ -3,7 +3,7 @@ FROM  openjdk:12-jdk-alpine
 RUN apk update && apk upgrade \
 && mkdir /root/demos && mkdir /root/.config && mkdir /root/.config/headshotbox && mkdir /root/libs \
 && cd /root/ \
-&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.17.3-standalone.jar \
+&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.17.4-standalone.jar \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/demoinfogo \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/headshotbox.sh \
 && cd /root/libs/ \
