@@ -1,9 +1,10 @@
-FROM  openjdk:12-jdk-alpine 
+FROM  openjdk:13-jdk-alpine 
 
 RUN apk update && apk upgrade \
+&& apk add bash \
 && mkdir /root/demos && mkdir /root/.config && mkdir /root/.config/headshotbox && mkdir /root/libs \
 && cd /root/ \
-&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.17.5-standalone.jar \
+&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.17.6-standalone.jar \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/demoinfogo \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/headshotbox.sh \
 && cd /root/libs/ \
