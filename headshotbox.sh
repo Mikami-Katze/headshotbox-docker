@@ -1,1 +1,0 @@
-java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -jar hsbox-0.17.6-standalone.jar --port 4000
