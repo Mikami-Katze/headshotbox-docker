@@ -12,7 +12,7 @@ sudo docker run -d --name hsbox \
 -p 4000:4000 \
 -v /home/<user>/demos-folder/:/root/demos \
 -v /home/<user>/hsbox-config/:/root/.config/headshotbox \
-hsbox:latest
+mikamikatze/hsbox:latest
 ```
 If you wish that I add more variables to the dockerfile, just open an issue.
 I will try to keep this dockerfile up-to-date. Open an issue if I miss a release.
