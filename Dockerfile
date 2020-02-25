@@ -9,7 +9,7 @@ RUN dpkg --add-architecture i386 \
 && apt-get clean \
 && mkdir /root/demos && mkdir /root/.config && mkdir /root/.config/headshotbox && mkdir /root/libs \
 && cd /root/ \
-&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.18.0-standalone.jar \
+&& wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/hsbox-0.18.2-standalone.jar \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/demoinfogo \
 && cd /root/libs/ \
 && wget https://raw.githubusercontent.com/Mikami-Katze/headshotbox-docker/master/libgcc_s.so.1 \
@@ -21,6 +21,6 @@ RUN dpkg --add-architecture i386 \
 
 VOLUME /root/demos
 VOLUME /root/.config/headshotbox
-CMD cd /root/ && java -jar hsbox-0.18.0-standalone.jar --port 4000
+CMD cd /root/ && java -jar hsbox-0.18.2-standalone.jar --port 4000
 
 EXPOSE 4000
