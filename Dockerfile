@@ -1,11 +1,11 @@
-FROM debian:jessie-slim
+FROM debian:buster-slim
 
 RUN dpkg --add-architecture i386 \
-&& echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu bionic main" | tee /etc/apt/sources.list.d/linuxuprising-java.list \
-&& apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A \
-&& echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | /usr/bin/debconf-set-selections \
 && apt-get update && apt-get upgrade -y \
-&& apt-get install -y wget libc6:i386 libncurses5:i386 libstdc++6:i386 oracle-java13-set-default \
+&& apt-get install gnupg -y \
+&& mkdir -p /usr/share/man/man1
+
+RUN apt-get install -y wget libc6:i386 libncurses5:i386 libstdc++6:i386 openjdk-11-jre-headless \
 && apt-get clean \
 && mkdir /root/demos && mkdir /root/.config && mkdir /root/.config/headshotbox && mkdir /root/libs \
 && cd /root/ \
